@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<script src="demo.js"></script>
+<html>
+<body>
+    <h1>
+        Morse Code Test
+    </h1>
+
+    
+    
+    <div id="container" style="float:left; width: 50%">
+        <label>Pick your settings:</label>
+        <form>
+            Would you like to start in morse code or english:
+            <select name="word_type" id="word_type">
+                <option value=1>in morse code</option>
+                <option value=0>in english</option>
+            </select>
+            <div>
+                length of word to translate
+                <input type=text id=num1 name=num1>
+            </div>
+            <div>
+                number of words to translate
+                <input type=text id=num2 name=num2>
+            </div>
+            <input value="generate" type="button"  onClick="btnClicked()">
+        </form>
+    </div>
+
+    <div style="float:right; width: 50%;">
+    <img src="./reference_chart.webp">
+    </div>
+    
+</body>
+</html>
